@@ -1,0 +1,230 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	font-size: 36px;
+}
+
+h4 {
+	margin: 5px 0 0 0;
+	font-size: 18px;
+}
+
+section {
+	margin: 40px 0;
+	padding: 0 20px;
+}
+
+h2 {
+	font-size: 24px;
+	margin: 0;
+}
+
+p {
+	margin: 10px 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 10px 0;
+}
+
+.skill-category {
+	margin-bottom: 30px;
+}
+
+.skill-category h4 {
+	margin: 0;
+}
+
+.highlight {
+	background-color: #f1f1f1;
+	padding: 2px 5px;
+	border-radius: 4px;
+}
+
+.job {
+	margin-bottom: 40px;
+}
+
+.job h3 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.job p {
+	margin: 5px 0;
+}
+
+.job ul {
+	margin: 5px 0;
+}
+
+.project {
+	margin-bottom: 40px;
+}
+
+.project h3 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.skills {
+	margin-bottom: 40px;
+}
+
+.skills h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.skills-columns {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.skills-column {
+	flex: 1;
+	margin-right: 20px;
+}
+
+.skills-group {
+	margin-bottom: 20px;
+}
+
+.skills-group h4 {
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.skills-list {
+	list-style-type: disc;
+	color: #555;
+	margin-left: 20px;
+	padding-left: 10px;
+}
+
+.skills-list-item {
+	margin-bottom: 5px;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.timeline-content {
+    margin-left: 20px;
+}
+
+.timeline-period {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 160px;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    transform: rotate(-45deg);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.timeline h3,
+.timeline h4 {
+    margin-top: 0;
+}
+
+.timeline ul {
+    margin: 5px 0;
+}
+
+.timeline ul li {
+    margin-bottom: 5px;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* footer p {
+	margin: 0;
+} */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #f1f1f1;
+}
+
+.fab {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-linkedin:before {
+    content: "\f08c";
+}
+
+.fa-github:before {
+    content: "\f09b";
+}
+
