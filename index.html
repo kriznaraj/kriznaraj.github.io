@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishnaraj's Portfolio</title>
     <!-- <script src="https://kit.fontawesome.com/f1be2e9577.js" crossorigin="anonymous"></script> -->
-	<script src="https://kit.fontawesome.com/f1be2e9577.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f1be2e9577.js" crossorigin="anonymous"></script>
     <!-- Add any additional meta tags or stylesheets as needed -->
     <style>
+        @media print {
+            .container { display: block; }
+
+            div, p  { page-break-inside: avoid; }
+
+            .noprint {
+                display: none;
+            }
+
+            .card {
+                break-inside: avoid;
+            }
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -150,7 +164,7 @@
             padding-bottom: 4rem;
         }
 
-        
+
 
         /* footer social icons */
 
@@ -227,7 +241,7 @@
 <body>
     <header>
         <h1>Krishnaraj Venkatesan</h1>
-		<!-- <p>Software Engineer</p> -->
+        <!-- <p>Software Engineer</p> -->
         <!-- Add navigation links if necessary -->
     </header>
 
@@ -439,7 +453,7 @@
         <p>Write mail</p>
     </section> -->
 
-    <footer>
+    <footer class="noprint">
         <!-- <p>Contact: [Your Contact Information]</p> -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/kriznaraj" target="_blank"><i class="fab fa-linkedin"></i></a>
