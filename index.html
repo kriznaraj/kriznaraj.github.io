@@ -12,6 +12,11 @@
         @media print {
             .container { display: block; }
 
+            html, body {
+                height: auto;
+                font-size: 6pt; /* changing to 10pt has no impact */
+            }
+
             div, p  { page-break-inside: avoid; }
 
             .noprint {
@@ -245,29 +250,29 @@
         <!-- Add navigation links if necessary -->
     </header>
 
-    <nav>
-        <a href="#about">About Me</a>
+    <nav class="noprint">
+        <a class="noprint" href="#about">About Me</a>
         <a href="#skills">Skills</a>
+        <a href="#academics">Academics</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <!-- <a href="#contact">Contact</a> -->
     </nav>
 
-    <section id="about">
+    <section class="noprint" id="about">
         <h2>About Me</h2>
         <div class="card">
             <div class="card-content">
                 <p>👋 Hi there! I'm Krishnaraj, a driven Principal Software Engineer at Chargebee, where I'm dedicated 
                     to empowering businesses worldwide with seamless recurring billing solutions.</p>
 
-                <p>With a fervent passion for technology, I thrive on leveraging innovative solutions to address complex 
-                    business needs. My expertise spans across Java, integrations, databases, cloud infrastructure, web services, and AWS.</p>
+                <p>I'm all about tech and love leveraging innovative solutions to address complex business problems. 
+                    From Java to cloud setups and everything in between, I've got you covered.</p>
 
-                <p>As a seasoned full-stack developer, I excel in architecting scalable and high-performing systems 
-                    using cutting-edge technologies. I take pride in assuming ownership of critical components 
-                    and consistently strive to surpass expectations, always eager to embrace new challenges.</p>
+                <p>As a seasoned full-stack developer, I specialize in architecting scalable and high-performing systems using the latest technologies. 
+                    I take ownership of critical components and consistently exceed expectations, eagerly embracing new challenges along the way.</p>
                 
-                <p>Let's connect and explore how we can transform your business with technology!</p>
+                <p>Let's <a href="mailto:krishnarajsiva@gmail.com" target="_blank" rel="noopener noreferrer">connect</a> and explore how we can transform your business with technology.</p>
             </div>
         </div>
     </section>
@@ -349,21 +354,21 @@
 
     </section>
 
-    <section id="experience">
+    <section id="academics">
         <h2>Academics</h2>
 
         <div class="card experience-item">
             <div class="card-content">
-                <h3 class="company">College of Engineering, Guindy (CEG), Anna University</h3>
                 <p class="work-period">Chennai, Apr. 2012</p>
+                <h3 class="company">College of Engineering, Guindy (CEG), Anna University</h3>
                 <p class="position">Bachelor of Technology (B.Tech) in Information Technology</p>
             </div>
         </div>
 
         <div class="card experience-item">
             <div class="card-content">
-                <h3 class="company">St. Joseph’s Higher Secondary School</h3>
                 <p class="work-period">Cuddalore, Apr. 2008</p>
+                <h3 class="company">St. Joseph’s Higher Secondary School</h3>
                 <p class="position">Class XII - Tamil Nadu State Board - Secured 92.12% overall &amp; Scored 100% in Mathematics</p>
             </div>
         </div>
@@ -375,33 +380,39 @@
 
         <div class="card experience-item">
             <div class="card-content">
-                <h3 class="company">Chargebee</h3>
                 <p class="work-period">Chennai (Remote), 2017 - Present</p>
-                <p class="position">Principal Software Engineer</p>
-                <p>Chargebee is a leading SaaS platform for subscription billing and revenue management.</p>
+                <h3 class="company">Chargebee</h3>
+                <p class="position"><em>Principal Software Engineer</em></p>
+                <p><a href="https://www.chargebee.com/" target="_blank" rel="noopener noreferrer">Chargebee</a> is a leading SaaS platform for subscription billing and revenue management.</p>
                 <p><b>Core Platform</b></p>
-                <p>I take the ownership of the Chargebee core job framework which process over 50 millions of async jobs in a day.</p>
+                <p>I take the ownership of the Chargebee core job framework, ensuring the smooth processing of over 50 million async jobs daily.</p>
                 <p><b>Accounting Integrations</b></p>
                 <p>I led a team of 5 and handled the delivery for the team Accounting Integrations.</p>
-                <p>I successfully added multiple integrations to Chargebee portfolio - Oracle NetSuite, Quickbooks, and Xero.</p>
+                <p>I effectively expanded Chargebee's integration offerings to include key platforms such as Oracle NetSuite, Quickbooks, and Xero.</p>
             </div>
         </div>
 
         <div class="card experience-item">
             <div class="card-content">
-                <h3 class="company">Travel Republic</h3>
                 <p class="work-period">Bangalore, 2014 - 2017</p>
-                <p class="position">Senior Software Developer</p>
-                <p>Travel Republic (part of Dnata International) is a UK-based holiday booking e-commerce website...</p>
+                <h3 class="company">Travel Republic</h3>
+                
+                <p class="position"><em>Senior Software Developer</em></p>
+                <p>Travel Republic (part of Dnata International) is a UK-based holiday booking e-commerce website.</p>
+                <p>As a full-stack developer, my responsibilities spanned across the development and maintenance of the booking dashboard 
+                    and several critical microservices - user reviews, payment processing, the shopping basket, and post-booking services</p>
             </div>
         </div>
 
         <div class="card experience-item">
             <div class="card-content">
-                <h3 class="company">Bally Technologies</h3>
                 <p class="work-period">Bangalore, 2013 - 2014</p>
-                <p class="position">Software Engineer</p>
-                <p>Bally Technologies, now Light & Wonder, specializes in casino gaming and marketing products...</p>
+                <h3 class="company">Bally Technologies</h3>
+                
+                <p class="position"><em>Software Engineer</em></p>
+                <p>Bally Technologies, now Light & Wonder, specializes in casino gaming and marketing products.</p>
+                <p>I contributed to the UI Framework team, where our focus was on developing reusable web components tailored for backend developers.</p>
+                <p>I created various desktop tools for casino marketing team.</p>
             </div>
         </div>
 
@@ -412,9 +423,28 @@
 
         <div class="card">
             <div class="card-content">
+                <h3>Chargebee Jobs Improvements</h3>
+                <p>A core frameowork for Chargebee jobs</p>
+                <p>I ensure the reliability of over 50 millions jobs processed in a day.</p>
+                <p>I made chargebee jobs to support idempotency, priority based execution and various other minor improvements</p>
+                <p><strong>Tech stacks used:</strong> Java, MySQL</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Chargebee Common DB Migration</h3>
+                <p>Consoilidated chargebee common data span across various regions (US, EU, and AP)</p>
+                <p><strong>Tech stacks used:</strong> Java, NodeJS, MySQL</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <h3>Catalyst - An Integration framework</h3>
-                <p>A config-based end-to-end integration service. A framework to fast-track development of integrations
+                <p>A config-based end-to-end integration sync service. A framework to fast-track development of integrations
                     for Chargebee.</p>
+                <p>I made the integration service more robust and scalable by introducing a queue based async architecture with reusable modular sync components.</p>
                 <p><strong>Tech stacks used:</strong> Java, Spring Boot, Apache Camel, MySQL, CodeBuild, CodeArtifact,
                     NodeJS</p>
             </div>
@@ -489,11 +519,10 @@
             <!-- <a href="https://leetcode.com/kriznaraj/" target="_blank"><i class="fa-solid fa-code"></i></a> -->
             <a href="https://krishnaraj.hashnode.dev/" target="_blank"><i class="fa-brands fa-hashnode"></i></a>
         </div>
-        <p>© 2023 Krishnaraj Venkatesan</p>
+        <p>© 2024 Krishnaraj Venkatesan</p>
         <!-- Add any additional footer content or links -->
     </footer>
-
-    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-angle-up"></i></button>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-angle-up noprint"></i></button>
 
     <script>
         // Smooth scrolling for anchor links
