@@ -2,60 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishnaraj's Portfolio</title>
-    <!-- <script src="https://kit.fontawesome.com/f1be2e9577.js" crossorigin="anonymous"></script> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishnaraj Venkatesan | Full-Stack + AI Platform Engineer</title>
+    <meta name="description"
+        content="Krishnaraj Venkatesan – Full-Stack & AI Engineer | AI Systems Architect | Platform & Infra Leader" />
+
+    <!-- SEO & Social Preview -->
+    <meta property="og:title" content="Krishnaraj Venkatesan | Full-Stack + AI Platform Engineer" />
+    <meta property="og:description" content="Full-Stack & AI Engineer | Platform Architecture | GenAI Systems" />
+    <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- FontAwesome -->
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
     <script src="https://kit.fontawesome.com/f1be2e9577.js" crossorigin="anonymous"></script>
-    <!-- Add any additional meta tags or stylesheets as needed -->
+
     <style>
-        @media print {
-            .container { display: block; }
-
-            html, body {
-                height: auto;
-                font-size: 8pt;
-            }
-
-            div, p  { page-break-inside: avoid; }
-
-            .noprint {
-                display: none;
-            }
-
-            .card {
-                break-inside: avoid;
-            }
-        }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            margin: 0;
+            padding: 1rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        header,
+        nav,
+        footer {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
         }
 
         header {
-            background-color: #24292e;
-            color: #ffffff;
-            text-align: center;
-            padding: 0.1rem;
+            padding: 1rem 0 0.2rem;
         }
 
         nav {
-            background-color: #24292e;
-            color: #ffffff;
-            text-align: center;
-            padding-bottom: 0.5rem;
+            padding: 0.5rem 0;
         }
 
         nav a {
-            color: #ffffff;
-            text-decoration: none;
+            color: white;
             margin: 0 1rem;
-            transition: color 0.3s ease-in-out;
+            text-decoration: none;
         }
 
         nav a:hover {
@@ -63,33 +59,18 @@
         }
 
         section {
-            margin: 1.5rem;
+            margin: 1.5rem 0;
         }
 
         footer {
-            background-color: #24292e;
-            color: #ffffff;
-            text-align: center;
-            padding-top: 0.5rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 1rem 0;
         }
 
-        /* footer {
-            background-color: #f5f5f5;
-            padding: 20px;
-            text-align: center;
-            color: #666;
-        } */
-
-        /* Card Styles */
         .card {
-            background-color: #ffffff;
+            background-color: white;
             border: 1px solid #e1e4e8;
             border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 1rem;
+            padding: 1.5rem;
             transition: transform 0.3s ease-in-out;
         }
 
@@ -97,148 +78,18 @@
             transform: scale(1.02);
         }
 
-        .card-content {
-            padding: 1.5rem;
-        }
-
         .card h3 {
             color: #24292e;
         }
 
-        .card p {
-            color: #555;
-        }
-
-        .experience-item {
-            text-align: left;
-        }
-
-        .company {
-            font-weight: bold;
-        }
-
-        .work-period {
-            float: right;
-            font-weight: normal;
-            color: #777;
-        }
-
-        /* .location {
-            float: right;
-            font-weight: normal;
-            color: #777;
-        } */
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            section {
-                margin: 1rem;
-            }
-
-            .card {
-                margin-bottom: 0.75rem;
-            }
-
-            header {
-                font-size: 1.5em;
-            }
-
-            nav a {
-                margin: 0 0.5rem;
-            }
-        }
-
-        /* Scroll to Top Button Styles */
-        #scrollToTopBtn {
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
-            border: none;
-            border-radius: 4px;
-            padding: 5px 8px;
-            cursor: pointer;
-            display: none;
-        }
-
-        /* section {
-            margin: 2rem;
-            padding-bottom: 2rem;
-        } */
-
-        .last-section {
-            padding-bottom: 4rem;
-        }
-
-
-
-        /* footer social icons */
-
-        .social-media a {
-            color: #fff;
-            font-size: 24px;
-            margin: 0 5px;
-            text-decoration: none;
-        }
-
-        .social-media a:hover {
-            color: #f1f1f1;
-        }
-
-        .fab {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .fa-twitter:before {
-            content: "\f099";
-        }
-
-        .fa-linkedin:before {
-            content: "\f08c";
-        }
-
-        .fa-github:before {
-            content: "\f09b";
-        }
-
-        /* .social-icons {
-            margin-top: 20px;
-        } */
-
         .social-icons a {
-            color: lightgreen;
-            margin-right: 10px;
-            font-size: 20px;
-            text-decoration: none;
+            color: #888;
+            margin: 0 10px;
+            font-size: 1.5rem;
         }
 
-        /* contact */
-        #contact {
-            margin-bottom: 2rem;
-            /* Add some bottom margin to separate it from the footer */
-            text-align: center;
-        }
-
-        #contact p {
-            margin: 0;
-            /* Remove default paragraph margin */
-            font-size: 1.2rem;
-            /* Adjust font size */
-        }
-
-        #contact strong {
-            font-weight: bold;
-        }
-
-        #contact a {
-            color: #0366d6;
-            /* Link color to match the theme */
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        #contact a:hover {
-            text-decoration: underline;
+        .social-icons a:hover {
+            color: #61dafb;
         }
     </style>
 </head>
@@ -246,314 +97,214 @@
 <body>
     <header>
         <h1>Krishnaraj Venkatesan</h1>
-        <!-- <p>Software Engineer</p> -->
-        <!-- Add navigation links if necessary -->
+        <h2 class="sr-only">Homepage of Krishnaraj Venkatesan</h2>
+        <p>Senior Lead Engineer | Full-Stack + Platform Engineering | AI Systems Architect</p>
     </header>
 
-    <nav class="noprint">
-        <a class="noprint" href="#about">About Me</a>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
         <a href="#skills">Skills</a>
-        <a href="#academics">Academics</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <!-- <a href="#contact">Contact</a> -->
+        <a href="#contact">Contact</a>
     </nav>
 
-    <section class="noprint" id="about">
-        <h2>About Me</h2>
+    <section id="about">
         <div class="card">
-            <div class="card-content">
-                <p>👋 Hi there! I'm Krishnaraj, a driven Principal Software Engineer at Chargebee, where I'm dedicated 
-                    to empowering businesses worldwide with seamless recurring billing solutions.</p>
+            <h2>About Me</h2>
+            <p>I’m a Senior Lead Software Engineer at Chargebee with over 12 years of experience across full-stack
+                development, platform architecture, and AI-powered product engineering. I build resilient
+                infrastructure, intuitive interfaces, and intelligent systems that drive business outcomes for SaaS
+                products.</p>
 
-                <p>I'm all about tech and love leveraging innovative solutions to address complex business problems. 
-                    From Java to cloud setups and everything in between, I've got you covered.</p>
+            <p>My expertise spans the full development stack—from modern frontend tooling and developer UX to backend
+                orchestration engines and cloud-native infra. Over the years, I’ve led the delivery of high-impact
+                initiatives such as ERP integration frameworks, async processing pipelines, and LLM-based AI platforms.
+            </p>
 
-                <p>As a seasoned full-stack developer, I specialize in architecting scalable and high-performing systems using the latest technologies. 
-                    I take ownership of critical components and consistently exceed expectations, eagerly embracing new challenges along the way.</p>
-                
-                <p>Let's <a href="mailto:krishnarajsiva@gmail.com" target="_blank" rel="noopener noreferrer">connect</a> and explore how we can transform your business with technology.</p>
-            </div>
+
+            <p>Currently, I spearhead architecture for <strong>Chargebee Copilot</strong>, an AI-native assistant
+                designed to automate and augment billing workflows. My focus includes:</p>
+            <ul>
+                <li>Engineering agent-based systems using <strong>LangGraph</strong>, <strong>LangChain</strong>,
+                    <strong>Pinecone</strong>, <strong>Langfuse</strong>, and <strong>RAG</strong> patterns
+                </li>
+                <li>Integrating <strong>OpenAI</strong> and <strong>Anthropic</strong> models for contextual query
+                    resolution, semantic search, and real-time support</li>
+                <li>Building reusable AI components that map to SaaS primitives like subscriptions, invoices, APIs, and
+                    billing rules</li>
+            </ul>
+
+            <p>I operate at the intersection of system design, AI engineering, and developer experience—taking ownership
+                of complex platform initiatives from 0→1 with clarity, empathy, and execution rigor.</p>
+
+            <p>Outside of Chargebee, I co-founded <strong><a href="https://revmonk.io" target="_blank"
+                        rel="noopener">Revmonk</a></strong>—a real-time lead intelligence tool for marketing teams. It
+                identified high-intent website visitors, enriched them with firmographic data, and triggered
+                auto-personalized emails on behalf of marketing reps. I built and maintained the full stack, from
+                visitor tracking and enrichment to workflow orchestration and outreach automation. Revmonk acquired 50+
+                trial customers and 2 paying clients before we sunset the product due to operational costs. The journey
+                strengthened my product intuition, system design instincts, and founder mindset.</p>
+
+
+        </div>
+    </section>
+
+    <section id="highlights">
+        <div class="card">
+            <h2>Career Highlights</h2>
+            <ul>
+                <li>🧩 12+ years in full-stack, platform, and AI engineering with deep SaaS domain expertise</li>
+                <li>🧠 Designed and led <strong>Chargebee Copilot</strong>—the first LLM assistant in the billing space
+                </li>
+                <li>⚙️ Architected infrastructure for async orchestration, ERP sync, and extensible AI workflows</li>
+                <li>🚀 Co-founded <strong><a href="https://revmonk.io" target="_blank"
+                            rel="noopener">Revmonk</a></strong> – a lead intelligence platform with automated marketing
+                    workflows; acquired 50+ trial users</li>
+                <li>💻 Delivered developer-facing tools, Chrome extensions, and UI-led workflows for reconciliation &
+                    insights</li>
+                <li>📚 Active mentor and technical leader across platform, AI, and product engineering teams</li>
+            </ul>
+
         </div>
     </section>
 
     <section id="skills">
-        <h2>Technical Skills</h2>
-
         <div class="card">
-            <div class="card-content">
-                <h3>Languages and Frameworks</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>Spring Boot, Spring Cloud</li>
-                    <li>C# & .NET CORE</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>Node.js</li>
-                    <li>TypeScript</li>
-                    <li>Angular 2</li>
-                    <li>MEAN Stack</li>
-                    <li>Python</li>
-                    <li>Go Lang</li>
-                    <!-- Add more languages and frameworks as needed -->
-                </ul>
-            </div>
+            <h2>Tech Stack Highlights</h2>
+            <ul>
+                <li><strong>LLM & AI Application Development:</strong> LangChain, LangGraph, OpenAI, Anthropic,
+                    Langfuse, RAG, Embeddings</li>
+                <li><strong>Search & Retrieval:</strong> Pinecone, Vector Search, Semantic Search Pipelines</li>
+                <li><strong>Platform Engineering:</strong> Java, Spring Boot, Node.js, Python, .NET, System
+                    Design, API Design, React, Next.js, and NestJS</li>
+                <li><strong>Cloud & Infrastructure:</strong> AWS (Lambda, S3, RDS, CloudFront, Route53), Docker,
+                    Kubernetes (EKS)</li>
+                <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis</li>
+                <li><strong>Platform Practices:</strong> Observability, Scalable Microservices,
+                    Event-driven Architectures, Idempotency Patterns</li>
+            </ul>
         </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>Tools & Infrastructure</h3>
-                <ul>
-                    <li>Apache Camel</li>
-                    <li>Chrome Extension</li>
-                    <li>Kafka</li>
-                    <li>ELK Stack</li>
-                    <li>GitHub Actions</li>
-                    <li>Docker</li>
-                    <li>K8s (EKS, GKE)</li>
-                    <!-- Add more tools and infrastructure details -->
-                </ul>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>Databases</h3>
-                <ul>
-                    <li>MySQL</li>
-                    <li>PostgreSQL</li>
-                    <li>MS SQL SERVER</li>
-                    <li>Redis</li>
-                    <li>MongoDB</li>
-                    <!-- Add more database details -->
-                </ul>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>AWS Services</h3>
-                <ul>
-                    <li>Identity - IAM</li>
-                    <li>Storage - S3, EBS</li>
-                    <li>Computing - EC2, Lambda</li>
-                    <li>DB - RDS</li>
-                    <li>CodeBuild & CodeArtifact</li>
-                    <li>DNS - Route53</li>
-                    <li>Container - ECR & ECS</li>
-                    <li>SES, SQS & SNS</li>
-                    <li>API Gateway</li>
-                    <li>Load balancer - ALB</li>
-                    <li>CDN - CloudFront</li>
-                    <li>Elastic Scaling - ASG</li>
-                    <li>Compliance - Macie</li>
-                    <!-- Add more AWS service details -->
-                </ul>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="academics">
-        <h2>Academics</h2>
-
-        <div class="card experience-item">
-            <div class="card-content">
-                <p class="work-period">Chennai, Apr. 2012</p>
-                <h3 class="company">College of Engineering, Guindy (CEG), Anna University</h3>
-                <p class="position">Bachelor of Technology (B.Tech) in Information Technology</p>
-            </div>
-        </div>
-
-        <div class="card experience-item">
-            <div class="card-content">
-                <p class="work-period">Cuddalore, Apr. 2008</p>
-                <h3 class="company">St. Joseph’s Higher Secondary School</h3>
-                <p class="position">Class XII - Tamil Nadu State Board - Secured 92.12% overall &amp; Scored 100% in Mathematics</p>
-            </div>
-        </div>
-
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
+        <div class="card">
+            <h2>Experience</h2>
 
-        <div class="card experience-item">
-            <div class="card-content">
-                <p class="work-period">Chennai (Remote), 2017 - Present</p>
-                <h3 class="company">Chargebee</h3>
-                <p class="position"><em>Principal Software Engineer</em></p>
-                <p><a href="https://www.chargebee.com/" target="_blank" rel="noopener noreferrer">Chargebee</a> is a leading SaaS platform for subscription billing and revenue management.</p>
-                <p><b>Core Platform</b></p>
-                <p>I take the ownership of the Chargebee core job framework, ensuring the smooth processing of over 50 million async jobs daily.</p>
-                <p><b>Accounting Integrations</b></p>
-                <p>I led a team of 5 and handled the delivery for the team Accounting Integrations.</p>
-                <p>I effectively expanded Chargebee's integration offerings to include key platforms such as Oracle NetSuite, Quickbooks, and Xero.</p>
-            </div>
+            <article>
+                <h3>Senior Lead Software Engineer – Chargebee</h3>
+                <p><em>Sep 2017 – Present | Chennai, India</em></p>
+                <p><strong>Key Contributions Across Multiple Teams:</strong></p>
+                <ul>
+                    <li><strong>AI Platform Team:</strong> Architected and built Chargebee Copilot, an LLM-powered
+                        assistant delivering contextual,
+                        real-time support. Built scalable RAG pipelines with modular AI agents using LangChain,
+                        LangGraph, Pinecone, Langfuse, and OpenAI/Anthropic.</li>
+                    <li><strong>Core Platform Team:</strong> Improved event/orchestration engines for scalability and
+                        resilience. Developed job framework processing 50M+ async jobs/day.</li>
+                    <li><strong>Integration Platform Team:</strong> Created plugin-based ERP integration framework
+                        supporting NetSuite, QuickBooks, Xero, etc.</li>
+                    <li><strong>Integrations Team:</strong> Developed Chrome-based reconciliation tools and UX
+                        enhancements for billing finance users.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Senior Software Developer – Travel Republic</h3>
+                <p><em>Sep 2014 – Aug 2017 | Bangalore, India</em></p>
+                <ul>
+                    <li>Developed scalable backend APIs and microservices for a major UK travel portal</li>
+                    <li>Owned manage bookings and user dashboard features</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Software Engineer – Bally Technologies</h3>
+                <p><em>Feb 2013 – Sep 2014 | Bangalore, India</em></p>
+                <ul>
+                    <li>Built reusable UI components and marketing apps for casino platforms using .NET and WPF</li>
+                    <li>Delivered internal tooling and voucher utilities</li>
+                </ul>
+            </article>
         </div>
-
-        <div class="card experience-item">
-            <div class="card-content">
-                <p class="work-period">Bangalore, 2014 - 2017</p>
-                <h3 class="company">Travel Republic</h3>
-                
-                <p class="position"><em>Senior Software Developer</em></p>
-                <p>Travel Republic (part of Dnata International) is a UK-based holiday booking e-commerce website.</p>
-                <p>As a full-stack developer, my responsibilities spanned across the development and maintenance of the booking dashboard 
-                    and several critical microservices - user reviews, payment processing, the shopping basket, and post-booking services</p>
-            </div>
-        </div>
-
-        <div class="card experience-item">
-            <div class="card-content">
-                <p class="work-period">Bangalore, 2013 - 2014</p>
-                <h3 class="company">Bally Technologies</h3>
-                
-                <p class="position"><em>Software Engineer</em></p>
-                <p>Bally Technologies, now Light & Wonder, specializes in casino gaming and marketing products.</p>
-                <p>I contributed to the UI Framework team, where our focus was on developing reusable web components tailored for backend developers.</p>
-                <p>I created various desktop tools for casino marketing team.</p>
-            </div>
-        </div>
-
     </section>
-
-    <section id="projects" class="last-section">
-        <h2>Projects</h2>
-
+    <section id="projects">
         <div class="card">
-            <div class="card-content">
-                <h3>Chargebee Jobs Improvements</h3>
-                <p>A core frameowork for Chargebee jobs</p>
-                <p>I ensure the reliability of over 50 millions jobs processed in a day.</p>
-                <p>I made chargebee jobs to support idempotency, priority based execution and various other minor improvements</p>
-                <p><strong>Tech stacks used:</strong> Java, MySQL</p>
-            </div>
+            <h2>Featured Projects</h2>
+            <ul>
+                <li>
+                    <strong>Chargebee Copilot</strong> – <em>Lead Architect, AI Platform Team</em><br />
+                    Built an AI-native assistant for subscription workflows using LangGraph, LangChain, Pinecone, and
+                    Langfuse.
+                    Delivered RAG pipelines and custom agents integrated with OpenAI/Anthropic to automate billing,
+                    support, and revenue ops.
+                </li>
+                <li>
+                    <strong>Catalyst</strong> – <em>Platform Integration Initiative</em><br />
+                    Designed a plugin-based ERP integration framework supporting async sync with NetSuite, QuickBooks,
+                    Xero, etc.
+                    Enabled rapid onboarding, observability, and scalable financial operations across multiple SaaS
+                    clients.
+                </li>
+                <li>
+                    <strong>Job Framework</strong> – <em>Core Platform Team</em><br />
+                    Architected a resilient task processing engine handling 50M+ async operations/day.
+                    Implemented idempotent job execution, retries, telemetry, and alerting for critical backend
+                    workflows.
+                </li>
+                <li>
+                    <strong><a href="https://revmonk.io" target="_blank" rel="noopener">Revmonk</a></strong> –
+                    <em>Co-founder & Engineering Lead</em><br />
+                    Built a real-time marketing ops platform to identify high-intent website visitors and auto-trigger
+                    outreach workflows.
+                    Engineered visitor tracking, lead enrichment, and impersonated email campaigns via dynamic
+                    workflows.
+                    Deployed using AWS, Supabase, PostgreSQL, and SendGrid. Onboarded 50+ trial users and 2 paying
+                    customers.
+                </li>
+                <li><strong>Common DB Migration</strong> – <em>Core Platform Team</em><br />
+                    Unified data movement infrastructure across global regions.
+                </li>
+                <li><strong>Chrome Reconciliation Tool</strong> – <em>Platform Integration Initiative</em><br />
+                    Extensions to help finance teams sync and verify invoice data at scale.</li>
+                <li>
+                    <strong>MeetBee</strong> – <em>Side Project</em><br />
+                    AI meeting assistant with calendar integration built using Azure, OpenAI, and Chrome APIs.
+                    Automated meeting notes, summaries, and follow-up reminders.
+                </li>
+                <li><strong>K JSON Lint</strong> – <em>Side Project</em><br />
+                    Lightweight Chrome extension for formatting and validating JSON.</li>
+            </ul>
         </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>Chargebee Common DB Migration</h3>
-                <p>Consoilidated chargebee common data span across various regions (US, EU, and AP)</p>
-                <p><strong>Tech stacks used:</strong> Java, NodeJS, MySQL</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>Catalyst - An Integration framework</h3>
-                <p>A config-based end-to-end integration sync service. A framework to fast-track development of integrations
-                    for Chargebee.</p>
-                <p>I made the integration service more robust and scalable by introducing a queue based async architecture with reusable modular sync components.</p>
-                <p><strong>Tech stacks used:</strong> Java, Spring Boot, Apache Camel, MySQL, CodeBuild, CodeArtifact,
-                    NodeJS</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>Chargebee Reconciliation Chrome Extension</h3>
-                <p>A Chrome extension developed to provide a reconciliation feature for Chargebee customers. It allows
-                    users to sync their accounting data and perform actions such as invoice marking and payment updates
-                    directly from the browser.</p>
-                <p><strong>Tech stacks used:</strong> Chrome Manifest V2, JavaScript, jQuery</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>Chargebee Alexa Skill</h3>
-                <p>Award-winning project developed during a hackathon to explore voice-based subscription handling using
-                    the Alexa voice assistant. Users can interact with Alexa to perform various actions, including
-                    creating a subscription, checking subscription status, and retrieving invoice details.</p>
-                <p><strong>Tech stacks used:</strong> Java, Spring Boot, MySQL, OAuth, Node.js, AWS Lambda</p>
-                <p><strong>Integrated with:</strong> Chargebee API and Alexa Skills Kit</p>
-                <p>Winner of the hackathon.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>MeetBee - An Intelligent Meeting Assistant</h3>
-                <p>A Chrome extension developed to assist participants during meetings.</p>
-                <p><strong>Tech stacks used:</strong> NodeJS, Python, Azure Speech Services, Azure Blob, Open AI, MySQL,
-                    Chrome Manifest V3, JavaScript</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <h3>K JSON Lint</h3>
-                <p>JSON Lint Chrome Plugin to Pretty Print JSON instantly. A simple tool that helps you lint JSON
-                    content while you stay focused on your current work.</p>
-                <p><strong>Tech stacks used:</strong> Chrome Manifest V3, JavaScript</p>
-                <p>Published in the Chrome Web Store.</p>
-            </div>
-        </div>
-
-        <div class="card last-card">
-            <div class="card-content">
-                <h3>Custom Voucher Designer</h3>
-                <p>A Windows desktop application to customize vouchers as needed in casino platforms.</p>
-                <p><strong>Tech stacks used:</strong> C#, WPF, SQL SERVER</p>
-            </div>
-        </div>
-
     </section>
 
 
-    <!-- <section id="contact">
-        <h2><a href="mailto:kriznaraj@gmail.com">kriznaraj@gmail.com</a></h2>
-        <p>Write mail</p>
-    </section> -->
-
-    <footer class="noprint">
-        <!-- <p>Contact: [Your Contact Information]</p> -->
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/kriznaraj" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/kriznaraj" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://medium.com/@krishnaraj" target="_blank"><i class="fab fa-medium"></i></a>
-            <a href="https://twitter.com/kriznaraj" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://stackoverflow.com/users/2682426/kriznaraj" target="_blank"><i
-                    class="fab fa-stack-overflow"></i></a>
-            <!-- <a href="https://leetcode.com/kriznaraj/" target="_blank"><i class="fa-solid fa-code"></i></a> -->
-            <a href="https://krishnaraj.hashnode.dev/" target="_blank"><i class="fa-brands fa-hashnode"></i></a>
+    <section id="contact">
+        <div class="card">
+            <h2>Contact</h2>
+            <p><strong>Let’s connect!</strong> I’m open to collaborating, speaking, or mentoring. Feel free to reach
+                out:</p>
+            <p>Email: <a href="mailto:krishnarajsiva@gmail.com">krishnarajsiva@gmail.com</a></p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/kriznaraj" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kriznaraj" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://twitter.com/kriznaraj" target="_blank" aria-label="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://medium.com/@krishnaraj" target="_blank" aria-label="Medium"><i
+                        class="fab fa-medium"></i></a>
+                <a href="https://krishnaraj.hashnode.dev/" target="_blank" aria-label="Hashnode"><i
+                        class="fa-brands fa-hashnode"></i></a>
+            </div>
         </div>
-        <p>© 2024 Krishnaraj Venkatesan</p>
-        <!-- Add any additional footer content or links -->
+    </section>
+
+    <footer>
+        <p>© 2025 Krishnaraj Venkatesan</p>
     </footer>
-    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-angle-up noprint"></i></button>
-
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Show/hide scroll to top button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                scrollToTopBtn.style.display = "none";
-            }
-        }
-
-        // Scroll to top function
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
 
 </html>
